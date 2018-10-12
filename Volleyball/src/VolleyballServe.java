@@ -50,14 +50,14 @@ public class VolleyballServe
 		System.out.println("              A                            B                              C                 ");
 		System.out.println("  -------------------------------------------------------------------------------------");
 		System.out.println("  |    " + Layout[0][0]  + "    | "  + Layout[0][1] +  "    |  " + Layout[0][2]    +  "|");
-		System.out.println("1 |                             |                           |                          |");
+		System.out.println("1 |    Right Back               |                           |      Left Back           |");
 		System.out.println("  |                             |                           |                          |");
 		System.out.println("  --------------------------------------------------------------------------------------");
 		System.out.println("  |    " + Layout[1][0]  + "    | "   +  " Libero  "   +   "|  " + Layout[1][2]    +  "|");
 		System.out.println("2 |                             | "   +Layout[1][1]    +   "|                          |");
 		System.out.println("  |                             |                           |                          |");
 		System.out.println("  --------------------------------------------------------------------------------------");
-		System.out.println("  |    " + "terrible player"+ " | "  + "okayish player" +  "|"  +"terrible player" +  "|");
+		System.out.println("  |    " + "Right Side"+      " | "  + "Middle Blocker" +  "|"  +"Outside Hitter" +   "|");
 		System.out.println("3 | "    +Layout[2][0]      + " | "  +Layout[2][1]      +  "|"  + Layout[2][2]    +   "| ");
 		System.out.println("  |                             |                           |                          |");
 		System.out.println("   -------------------------------------------------------------------------------------");
@@ -67,5 +67,6 @@ public class VolleyballServe
 		{
 		
 		}
+	// it is 9:09 pm and i have 6 hours of homework.... Yay :)
 
 	}
