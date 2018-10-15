@@ -81,53 +81,63 @@ public class VolleyballServe
 		{
 		int ourTeamPoints = 19; 
 		int otherTeamPoints = 19; 
-		System.out.println("Senario: The score is 21 - 22 and our team has the ball back so we can serve! Thank the Lord that you are back to serve!"); 
+		System.out.println("Senario: The score is 19 - 19 and our team has the ball back so we can serve! Thank the Lord that you are back to serve!"); 
+		while (ourTeamPoints <= 25 || otherTeamPoints <= 25)
+			{
+			String [][] Layout = new String [3][3];
+			Layout[0][0] = "Right Back #12";
+			Layout[1][0] = " "; 
+			Layout[2][0] = "Right Side Hitter #13";
+			Layout[0][1] = " ";
+			Layout[1][1] = " Libero #2";
+			Layout[2][1] = "Middle Blocker #12";
+			Layout[0][2] = "Left Back #7";
+			Layout[1][2] = " ";
+			Layout[2][2] = "Outside Hitter #9";
+			
+			String A1 = Layout[0][0];
+			String A2 = Layout[1][0];
+			String A3 = Layout[2][0];
+			String B1 = Layout[0][1];
+			String B2 = Layout[1][1];
+			String B3 = Layout[2][1];
+			String C1 = Layout[0][2];
+			String C2 = Layout[1][2];
+			String C3 = Layout[2][2]; 
+				
 		System.out.println("              A                            B                              C                 ");
 		System.out.println("  -------------------------------------------------------------------------------------");
-		System.out.println("  |    " + Layout[0][0]  + "     "  + Layout[0][1] +  "     " + Layout[0][2]    +  "    ");
-		System.out.println("1 |    Right Back #12           |                           |      Left Back  #7       |");
+		System.out.println("  |         " + Layout[0][0]  + "                  "   + Layout[0][1] +  "                 " + Layout[0][2]    +  "    ");
+		System.out.println("1 |                             |                           |                          |");
 		System.out.println("  |                             |                           |                          |");
 		System.out.println("  --------------------------------------------------------------------------------------");
-		System.out.println("  | "       +Layout[1][0]  + "     " +Layout[1][1]    +  "     "  + Layout[1][2]   +"    ");
-		System.out.println("2 |                             |         Libero   #2       |                          |");
+		System.out.println("  | "           +Layout[1][0]  + "                                     " +Layout[1][1]    +  "                              "  + Layout[1][2]   +"    ");
+		System.out.println("2 |                             |                           |                          |"); 
 		System.out.println("  |                             |                           |                          |");
 		System.out.println("  --------------------------------------------------------------------------------------");
-		System.out.println("  |  " + Layout[2][0]      + "  "    +Layout[2][1]      +  " "  + Layout[2][2]    +   "");
-		System.out.println("3 |    Right Side Hitter #13    |   Middle Blocker #12      |  Outside Hitter #9       | ");
+		System.out.println("      " + Layout[2][0]      + "        "    +Layout[2][1]      +  "          "  + Layout[2][2]    +   "");
+		System.out.println("3 |                             |                           |                          | ");
 		System.out.println("  |                             |                           |                          |");
-		System.out.println("   -------------------------------------------------------------------------------------");
+		System.out.println("   -------------------------------------------------------------------------------------"); 
 		
-		String [][] Layout = new String [3][3];
-		Layout[0][0] = "A1";
-		Layout[1][0] = "A2"; 
-		Layout[2][0] = "A3";
-		Layout[0][1] = "B1";
-		Layout[1][1] = "B2";
-		Layout[2][1] = "B3";
-		Layout[0][2] = "C1";
-		Layout[1][2] = "C2";
-		Layout[2][2] = "C3"; 
-		
-		while (ourTeamPoints <= 25)
-			{
 		System.out.println("Pick a spot to serve!");
 		Scanner userInput2 = new Scanner(System.in);
 		String serviceAce = userInput2.nextLine();
-		if (serviceAce == "A1")
+		if (serviceAce == A1)
 			{
-			System.out.println("Great decision! The Right back player is not the best serve reciever on the team! You got a service ace!");
+			System.out.println("Great decision! The right back player is not the best serve reciever on the team! You got a service ace!");
 			ourTeamPoints++; 
 			System.out.println("The score is: " + ourTeamPoints + " to " +otherTeamPoints);
 			}
 		
-		if (serviceAce  == "A2")
+		if (serviceAce  == A2)
 			{
 			System.out.println("Yes!! That spot is completetly open! You got a service ace!");
 			ourTeamPoints++; 
 			System.out.println("The score is: " + ourTeamPoints + " to " +otherTeamPoints);
 			}
 		
-		if (serviceAce == "A3")
+		if (serviceAce == A3)
 			{
 			System.out.println("Awe, #13 made a perfect pass for a perfect hit, we lost the point!");
 			otherTeamPoints++; 
@@ -136,42 +146,42 @@ public class VolleyballServe
 			System.out.println("The score is: " + ourTeamPoints + " to " +otherTeamPoints);
 			}
 		
-		if (serviceAce == "B1")
+		if (serviceAce == B1)
 			{
 			System.out.println("Awesome! Perfect spot! A service ace! Serve again!");
 			ourTeamPoints++; 
 			System.out.println("The score is: " + ourTeamPoints + " to " +otherTeamPoints);
 			}
 		
-		if (serviceAce == "B2")
+		if (serviceAce == B2)
 			{
 			System.out.println("Awe you served it to the Libero, who is the best passer on the team, who got a perfecrt pass for a perfect hit from the middle. You lost a point!");
 			otherTeamPoints++;
 			System.out.println("The score is: " + ourTeamPoints + " to " +otherTeamPoints);
 			}
 		
-		if (serviceAce == "B3")
+		if (serviceAce == B3)
 			{
 			System.out.println("Yes! The middle blocker is the worst passer on the team! You got a point!");
 			ourTeamPoints++; 
 			System.out.println("The score is: " + ourTeamPoints + " to " +otherTeamPoints);
 			}
 		
-		if (serviceAce == "C1")
+		if (serviceAce == C1)
 			{
 			System.out.println("Awe #7 is a great passer who got a perfect pass, but thankfully the outside hitter hit the ball out of bounds! We got a point!");
 			ourTeamPoints++; 
 			System.out.println("The score is: " + ourTeamPoints + " to " +otherTeamPoints);
 			}
 		
-		if (serviceAce == "C2")
+		if (serviceAce == C2)
 			{
 			System.out.println("Great choice! But oh no! the left back player dives on the floor to save the ball! But thankfully the setter sets a double and we get the point!");
 			ourTeamPoints++; 
 			System.out.println("The score is: " + ourTeamPoints + " to " +otherTeamPoints);
 			}
 		
-		if (serviceAce == "C3")
+		if (serviceAce == C3)
 			{
 			System.out.println("Geez, that outside hitter got a perfect pass for a perfect hit off the block! We lost the point!");
 			otherTeamPoints++;
@@ -185,6 +195,5 @@ public class VolleyballServe
 			}
 		
 		}
-
-
 	}
+} 
