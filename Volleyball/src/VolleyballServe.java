@@ -15,11 +15,26 @@ public class VolleyballServe
 		
 		public static void createCourt()
 		{
+		@SuppressWarnings("resource")
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("Welcome player! Are you ready to play some volleyball? Of course you are :)");
 		System.out.println("What is your name first off? That way we can yell your name over the loud speaker when you get a service ace!");
 		String bestPlayersName = userInput.nextLine(); 
 		System.out.println("Great " + bestPlayersName + "! Now it is time to beat our rivals!");
+		System.out.println("Who do you want our rivals to be? \n 1.) Regis \n 2.) Some random team");
+		int rivalTeam = userInput.nextInt(); 
+		if (rivalTeam == 1)
+			{
+			System.out.println("Regis is a good choice, let's beat them!");
+			}
+		else if (rivalTeam == 2)
+			{
+			System.out.println("Alright! Let's beat this mystery team!");
+			}
+		else
+			{
+			System.out.println("Please choose an option!");
+			}
 		layout = new String [3][3];
 		for (int i = 0; i < 3; i++)
 			{
@@ -66,6 +81,7 @@ public class VolleyballServe
 		System.out.println("   -------------------------------------------------------------------------------------");
 		System.out.println("                                           NET                                           ");
 		System.out.println("Hmmmm looks like we've got some good competion today don't you think?");
+		@SuppressWarnings("resource")
 		Scanner userInput1 = new Scanner(System.in);
 		String answer = userInput1.nextLine(); 
 		if (answer.equals("yes"))
@@ -96,7 +112,7 @@ public class VolleyballServe
 		layout[2][2] = "Outside Hitter #9"; 
 		
 		System.out.println("Senario: The score is 19 to 19 and our team has the ball back so we can serve! Thank the Lord that you are back to serve!");
-		System.out.println("The goal of the game is to get to 25 first before the other team does! The only rule is, you can't serve the same place twice! Good Luck!");
+		System.out.println("The goal of the game is to get to 25 first before the other team does! \n The only rule is, you can't serve the same place twice and pick the letter first and then the number! Good Luck!");
 		while (ourTeamPoints < 25 && otherTeamPoints < 25)
 			{		
 		System.out.println("              A                            B                              C                 ");
@@ -116,6 +132,7 @@ public class VolleyballServe
 		System.out.println("                                           NET                                          ");
 		
 		System.out.println("Pick a spot to serve!");
+		@SuppressWarnings("resource")
 		Scanner userInput2 = new Scanner(System.in);
 		String serviceAce = userInput2.nextLine();
 		if (serviceAce.equals("A1"))
