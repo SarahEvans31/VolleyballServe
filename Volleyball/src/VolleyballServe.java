@@ -96,7 +96,8 @@ public class VolleyballServe
 		layout[2][2] = "Outside Hitter #9"; 
 		
 		System.out.println("Senario: The score is 19 to 19 and our team has the ball back so we can serve! Thank the Lord that you are back to serve!");
-		while (ourTeamPoints <= 25 && otherTeamPoints <= 25)
+		System.out.println("The goal of the game is to get to 25 first before the other team does! The only rule is, you can't serve the same place twice! Good Luck!");
+		while (ourTeamPoints < 25 && otherTeamPoints < 25)
 			{		
 		System.out.println("              A                            B                              C                 ");
 		System.out.println("  -------------------------------------------------------------------------------------");
